@@ -1,5 +1,6 @@
 body{
-  transition:background-color 1s linear 0s 
+  transition:background-color 1s linear 0s;
+  font-family: 'Lato', cursive;
 }
 *{
     box-sizing:border-box;
@@ -54,7 +55,7 @@ body{
     width: 40px;
     height: 40px;
     text-align: center;
-    line-height: 40px !important;
+    line-height: 40px ;
     text-shadow: 0 0 1px #000
 }
 .box .inner .item:nth-child(1){

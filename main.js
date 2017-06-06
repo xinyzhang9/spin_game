@@ -1,4 +1,5 @@
 
+var score = 0;
 var countItems = $(".item").length,
     random , 
     getIconName , 
@@ -33,4 +34,6 @@ $(".spin").on("click",function(){
   
   $(".title , body").css({backgroundColor: getColor , color: "#FFF" });
   $(".title h3").text(getIconName);
+    score += parseInt(getIconName.length);
+    $('#score').text(score);
 });
