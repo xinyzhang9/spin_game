@@ -25,7 +25,7 @@ $(".spin").on("click",function(){
 
 
 (random == 5 ) ?  randDeg += 60 :'';
-(random == 4) ?  randDeg += 120 :'';
+(random == 4 ) ?  randDeg += 120 :'';
 (random == 3 ) ?  randDeg += 180 :'';
 (random == 2 ) ?  randDeg += 240 :'';
 (random == 1 ) ?  randDeg += 300 :'';
@@ -36,7 +36,7 @@ $(".spin").on("click",function(){
   $(".title h3").text(getIconName);
     score += parseInt(getIconName.length);
     $('#score').text(score);
-    if(score >= 100){
+    if(score >= 100 && score < 106){
         $('#ps').show().delay(3000).fadeOut();
     }
 });
