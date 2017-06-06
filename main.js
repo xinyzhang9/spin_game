@@ -36,4 +36,7 @@ $(".spin").on("click",function(){
   $(".title h3").text(getIconName);
     score += parseInt(getIconName.length);
     $('#score').text(score);
+    if(score >= 100){
+        $('#ps').show().delay(3000).fadeOut();
+    }
 });
